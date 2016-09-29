@@ -9,12 +9,11 @@ N=`tput sgr0`
 
 # Installation
 ATOM_RPM="atom.x86_x64.rpm"
-BINPATH="`type -P atom`"
 
 echo "${B}Atom x86_x64 Installer ${N}"
 echo "${B}-------------------------${N}"
 
-if [ -s $BINPATH ]; then
+if command -v "atom" >/dev/null 2>&1; then
   echo "Atom is already installed!"
   echo "Please uninstall it and try again."
   echo
