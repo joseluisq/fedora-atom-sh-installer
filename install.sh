@@ -11,15 +11,16 @@ N=`tput sgr0`
 ATOM_RPM="atom.x86_x64.rpm"
 BINPATH="`type -P atom`"
 
-
 echo "${B}Atom x86_x64 Installer ${N}"
 echo "${B}-------------------------${N}"
 
 if [ -s $BINPATH ]; then
-  echo "Removing old Atom package..."
-  echo 
-  
-  sudo dnf remove atom
+  echo "Atom is already installed!"
+  echo "Please uninstall it and try again."
+  echo
+  echo "`atom -v`"
+  echo
+  exit 0
 fi
 
 echo "Downloading latest package..."
