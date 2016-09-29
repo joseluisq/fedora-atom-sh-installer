@@ -4,10 +4,12 @@
 ## Install
 
 ```sh
-$ wget -qO- http://git.io/fed-atom-sh | sudo sh
+$ wget -qO- http://git.io/fed-atom-sh | sh
 ```
 
 ## Usage
+
+CLI:
 
 ```sh
 $ atom my-directory-or-file-path
